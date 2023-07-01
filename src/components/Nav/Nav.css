@@ -4,3 +4,8 @@
     justify-content: space-between;
     align-items: center;
 }
+
+.nav__logo {
+    width: 196px;
+    height: 196px;
+}

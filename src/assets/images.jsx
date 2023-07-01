@@ -1,5 +1,7 @@
-import logo from '../../public/logo.png';
+const logo = './logo.png';
 
-export default {
+const images = {
     logo
-};
+}
+
+export default images;

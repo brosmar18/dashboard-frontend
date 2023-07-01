@@ -1,4 +1,5 @@
 import React from 'react';
+import './NotesMenu.css';
 
 const NotesMenu = () => {
     return (

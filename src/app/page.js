@@ -4,8 +4,7 @@ import {Nav, Header, NotesMenu, Footer} from '../components';
 
 export default function Home() {
   return (
-   <div>
-    <Nav />
+   <div className='page'>
     <Header />
     <NotesMenu />
     <Footer />

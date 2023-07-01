@@ -1,0 +1,9 @@
+.header {
+    height: 100vh;
+    min-height: 720px;
+    max-height: 800px;
+    overflow: hidden;
+    padding-left: 80px;
+    padding-right: 80px;
+    box-sizing: border-box;
+}

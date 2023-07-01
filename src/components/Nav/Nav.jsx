@@ -16,21 +16,23 @@ const NavBar = () => {
         <Navbar expand="lg" className='bg-body-tertiary'>
             <Container>
                 <Navbar.Brand href='#'>
-                    <img src={images.logo} alt='logo' />
+                    <img className='logo' src={images.logo} alt='logo' />
                 </Navbar.Brand>
                 <Navbar.Toggle aria-controls='basic-navbar-nav' />
                 <Navbar.Collapse id='basic-navbar-nav'>
                     <Nav className='me-auto'>
                         <Nav.Link href="#home">Home</Nav.Link>
                         <NavDropdown title="Notes" id="basic-nav-dropdown">
-                            <NavDropdown.Item href="#action/3.1">Action</NavDropdown.Item>
+                            <NavDropdown.Item href="#action/3.1">Html & Css</NavDropdown.Item>
+                            <NavDropdown.Divider />
                             <NavDropdown.Item href="#action/3.2">
-                                Another action
+                                Javascript
                             </NavDropdown.Item>
-                            <NavDropdown.Item href="#action/3.3">Something</NavDropdown.Item>
+                            <NavDropdown.Divider />
+                            <NavDropdown.Item href="#action/3.3">React.js</NavDropdown.Item>
                             <NavDropdown.Divider />
                             <NavDropdown.Item href="#action/3.4">
-                                Separated link
+                                Next.js
                             </NavDropdown.Item>
                         </NavDropdown>
                         <Nav.Link href="#">Documents</Nav.Link>

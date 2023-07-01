@@ -1,9 +1,14 @@
 import React from 'react';
+import Link from 'next/link';
+
+
 import './Nav.css';
 
 const Nav = () => {
     return (
-        <div>NavBar</div>
+        <nav className='nav'>
+
+        </nav>
     )
 }
 

@@ -21,7 +21,7 @@ const NavBar = () => {
                     <Nav>
                         <Nav.Link href="/">Home</Nav.Link>
                         <NavDropdown title="Notes" id="basic-nav-dropdown">
-                            <NavDropdown.Item href="#action/3.1">Html</NavDropdown.Item>
+                            <NavDropdown.Item href="/HTML">Html</NavDropdown.Item>
                             <NavDropdown.Divider />
                             <NavDropdown.Item href="/CSS">CSS</NavDropdown.Item>
                             <NavDropdown.Divider />

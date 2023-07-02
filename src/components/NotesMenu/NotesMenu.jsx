@@ -18,6 +18,7 @@ const NotesMenu = () => {
                                 <Card.Text>
                                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam vel at officiis ratione aspernatur.
                                 </Card.Text>
+                                <Button variant='primary'>See Notes</Button>
                             </Card.Body>
                         </Card>
                     </Col>

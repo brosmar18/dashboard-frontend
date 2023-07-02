@@ -1,27 +1,37 @@
 'use client';
-import React from 'react';
+
+import React, { useState, useEffect } from 'react';
 import './NotesMenu.css';
-import {images} from '../../assets';
-import {Button, Card, Container, Row, Col} from 'react-bootstrap';
+import { Button, Card, Container, Row, Col } from 'react-bootstrap';
+import client, { urlFor } from '../../client/client';
 
 const NotesMenu = () => {
+    const [categories, setCategories] = useState([]);
+
+    useEffect(() => {
+        const query = `*[_type == "notesCategory"]`;
+
+        client.fetch(query)
+            .then((data) => setCategories(data));
+    }, [])
+
     return (
         <section className='notes'>
             <h2 className='notes__title'>My Notes</h2>
             <Container>
-                <Row>
-                    <Col>
-                        <Card style={{width: '18rem'}}>
-                            <Card.Img variant='top' src={images.logo} alt='logo' />
-                            <Card.Body>
-                                <Card.Title>React.js</Card.Title>
-                                <Card.Text>
-                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam vel at officiis ratione aspernatur.
-                                </Card.Text>
-                                <Button variant='primary'>See Notes</Button>
-                            </Card.Body>
-                        </Card>
-                    </Col>
+                <Row className="justify-content-center">
+                    {categories.map((category, index) => (
+                        <Col sm={12} md={6} lg={4} key={category.title + index} className="d-flex align-items-stretch">
+                            <Card className="mb-4 note-card">
+                                <Card.Img variant='top' src={urlFor(category.imgUrl).url()} alt={category.title} />
+                                <Card.Body>
+                                    <Card.Title>{category.title}</Card.Title>
+                                    <Card.Text>{category.desc}</Card.Text>
+                                    <Button variant='primary'>See Notes</Button>
+                                </Card.Body>
+                            </Card>
+                        </Col>
+                    ))}
                 </Row>
             </Container>
         </section>

@@ -27,7 +27,7 @@ const NavBar = () => {
                             <NavDropdown.Divider />
                             <NavDropdown.Item href="/JavaScript">Javascript</NavDropdown.Item>
                             <NavDropdown.Divider />
-                            <NavDropdown.Item href="#action/3.3">React</NavDropdown.Item>
+                            <NavDropdown.Item href="/React">React</NavDropdown.Item>
                             <NavDropdown.Divider />
                             <NavDropdown.Item href="/Next">Next</NavDropdown.Item>
                         </NavDropdown>

@@ -15,6 +15,9 @@ const NotesMenu = () => {
                             <Card.Img variant='top' src={images.logo} alt='logo' />
                             <Card.Body>
                                 <Card.Title>React.js</Card.Title>
+                                <Card.Text>
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam vel at officiis ratione aspernatur.
+                                </Card.Text>
                             </Card.Body>
                         </Card>
                     </Col>

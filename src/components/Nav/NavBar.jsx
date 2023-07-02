@@ -23,7 +23,7 @@ const NavBar = () => {
                         <NavDropdown title="Notes" id="basic-nav-dropdown">
                             <NavDropdown.Item href="#action/3.1">Html</NavDropdown.Item>
                             <NavDropdown.Divider />
-                            <NavDropdown.Item href="#action/3.1">CSS</NavDropdown.Item>
+                            <NavDropdown.Item href="/CSS">CSS</NavDropdown.Item>
                             <NavDropdown.Divider />
                             <NavDropdown.Item href="#action/3.2">Javascript</NavDropdown.Item>
                             <NavDropdown.Divider />

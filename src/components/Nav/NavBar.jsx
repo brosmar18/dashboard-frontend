@@ -21,16 +21,18 @@ const NavBar = () => {
                     <Nav>
                         <Nav.Link href="/">Home</Nav.Link>
                         <NavDropdown title="Notes" id="basic-nav-dropdown">
-                            <NavDropdown.Item href="#action/3.1">Html & Css</NavDropdown.Item>
+                            <NavDropdown.Item href="#action/3.1">Html</NavDropdown.Item>
+                            <NavDropdown.Divider />
+                            <NavDropdown.Item href="#action/3.1">CSS</NavDropdown.Item>
                             <NavDropdown.Divider />
                             <NavDropdown.Item href="#action/3.2">Javascript</NavDropdown.Item>
                             <NavDropdown.Divider />
-                            <NavDropdown.Item href="#action/3.3">React.js</NavDropdown.Item>
+                            <NavDropdown.Item href="#action/3.3">React</NavDropdown.Item>
                             <NavDropdown.Divider />
-                            <NavDropdown.Item href="#action/3.4">Next.js</NavDropdown.Item>
+                            <NavDropdown.Item href="#action/3.4">Next</NavDropdown.Item>
                         </NavDropdown>
                         <Nav.Link href="/Documents">Documents</Nav.Link>
-                        <Nav.Link href="#">About</Nav.Link>
+                        <Nav.Link href="/About">About</Nav.Link>
                     </Nav>
                 </Navbar.Collapse>
             </Container>

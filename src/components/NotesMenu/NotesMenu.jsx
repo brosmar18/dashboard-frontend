@@ -19,10 +19,10 @@ const NotesMenu = () => {
         <section className='notes'>
             <h2 className='notes__title'>My Notes</h2>
             <Container>
-                <Row>
+                <Row className="justify-content-center">
                     {categories.map((category, index) => (
-                        <Col sm={12} md={6} lg={4} key={category.title + index}>
-                            <Card className="mb-4" style={{ width: '18rem' }}>
+                        <Col sm={12} md={6} lg={4} key={category.title + index} className="d-flex align-items-stretch">
+                            <Card className="mb-4 note-card">
                                 <Card.Img variant='top' src={urlFor(category.imgUrl).url()} alt={category.title} />
                                 <Card.Body>
                                     <Card.Title>{category.title}</Card.Title>

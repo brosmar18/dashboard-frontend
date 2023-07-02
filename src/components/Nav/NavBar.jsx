@@ -7,7 +7,7 @@ import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import NavDropdown from 'react-bootstrap/NavDropdown';
 
-import './Nav.css';
+import './NavBar.css';
 
 const NavBar = () => {
     return (
@@ -29,7 +29,7 @@ const NavBar = () => {
                             <NavDropdown.Divider />
                             <NavDropdown.Item href="#action/3.4">Next.js</NavDropdown.Item>
                         </NavDropdown>
-                        <Nav.Link href="/Documents/Documents">Documents</Nav.Link>
+                        <Nav.Link href="/Documents">Documents</Nav.Link>
                         <Nav.Link href="#">About</Nav.Link>
                     </Nav>
                 </Navbar.Collapse>

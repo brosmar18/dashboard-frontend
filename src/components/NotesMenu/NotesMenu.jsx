@@ -1,7 +1,6 @@
 'use client';
 import React, {useState, useEffect} from 'react';
 import './NotesMenu.css';
-import {images} from '../../assets';
 import {Button, Card, Container, Row, Col} from 'react-bootstrap';
 import client, { urlFor } from '../../client/client';
 
@@ -21,16 +20,16 @@ const NotesMenu = () => {
             <Container>
                 <Row>
                     <Col>
-                        <Card style={{width: '18rem'}}>
-                            <Card.Img variant='top' src={images.logo} alt='logo' />
+                        {categories.map((categories, index) => (
+                            <Card style={{width: '18rem'}} key={categories.title + index}>
+                            <Card.Img variant='top' src={urlFor(categories.imgUrl).url()} alt={categories.title} />
                             <Card.Body>
-                                <Card.Title>React.js</Card.Title>
-                                <Card.Text>
-                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam vel at officiis ratione aspernatur.
-                                </Card.Text>
+                                <Card.Title>{categories.title}</Card.Title>
+                                <Card.Text>{categories.desc}</Card.Text>
                                 <Button variant='primary'>See Notes</Button>
                             </Card.Body>
                         </Card>
+                        ))}
                     </Col>
                 </Row>
             </Container>

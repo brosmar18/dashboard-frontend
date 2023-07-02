@@ -25,11 +25,11 @@ const NavBar = () => {
                             <NavDropdown.Divider />
                             <NavDropdown.Item href="/CSS">CSS</NavDropdown.Item>
                             <NavDropdown.Divider />
-                            <NavDropdown.Item href="#action/3.2">Javascript</NavDropdown.Item>
+                            <NavDropdown.Item href="/JavaScript">Javascript</NavDropdown.Item>
                             <NavDropdown.Divider />
                             <NavDropdown.Item href="#action/3.3">React</NavDropdown.Item>
                             <NavDropdown.Divider />
-                            <NavDropdown.Item href="#action/3.4">Next</NavDropdown.Item>
+                            <NavDropdown.Item href="/Next">Next</NavDropdown.Item>
                         </NavDropdown>
                         <Nav.Link href="/Documents">Documents</Nav.Link>
                         <Nav.Link href="/About">About</Nav.Link>

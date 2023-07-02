@@ -19,7 +19,7 @@ const NavBar = () => {
                 <Navbar.Toggle aria-controls='basic-navbar-nav' />
                 <Navbar.Collapse id='basic-navbar-nav' className='justify-content-center'>
                     <Nav>
-                        <Nav.Link href="#home">Home</Nav.Link>
+                        <Nav.Link href="/">Home</Nav.Link>
                         <NavDropdown title="Notes" id="basic-nav-dropdown">
                             <NavDropdown.Item href="#action/3.1">Html & Css</NavDropdown.Item>
                             <NavDropdown.Divider />

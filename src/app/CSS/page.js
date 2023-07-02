@@ -1,13 +1,13 @@
 import React from 'react';
 import {NavBar} from '../../components';
 
-const Documents = () => {
+const Css = () => {
     return (
-        <div className='page'>
+        <div>
             <NavBar />
-            <h1>Documents Page</h1>
+            <h1>CSS Page</h1>
         </div>
     )
 }
 
-export default Documents;
+export default Css;

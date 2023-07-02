@@ -29,7 +29,7 @@ const NavBar = () => {
                             <NavDropdown.Divider />
                             <NavDropdown.Item href="#action/3.4">Next.js</NavDropdown.Item>
                         </NavDropdown>
-                        <Nav.Link href="#">Documents</Nav.Link>
+                        <Nav.Link href="/Documents/Documents">Documents</Nav.Link>
                         <Nav.Link href="#">About</Nav.Link>
                     </Nav>
                 </Navbar.Collapse>
